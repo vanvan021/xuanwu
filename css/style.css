@@ -1,0 +1,625 @@
+.rubik-scribble-regular {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+body {
+    font-family: Montserrat,rubik scribble;
+    color: white;
+  }
+
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color:#001415af;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: transparent;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: transparent;
+    color:orangered;
+  }
+
+
+  .activemobile {
+    background-color: #001415;
+    color: white;
+  }
+
+  img.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  img.whiteversion {
+    display: none;
+  }
+
+
+
+
+
+body{
+    background-color: #001415;
+}
+
+.skip{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    border-color: transparent;
+    width: 50px;
+    padding: 10px;
+    margin: 20px;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    font-family: PT Sans;
+    height: 3px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.skip:focus {
+    list-style-type: none;
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+#navbar{
+    display: none;
+}
+
+h1{
+    font-family: rubik scribble;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
+}
+h2{
+    font-family: rubik scribble;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: Montserrat;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    /*margin-top: 100px;*/
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+h3{
+    font-family: rubik scribble;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+  }
+
+img.list {
+    object-fit: cover; /* This will cover the area without stretching the image */
+    border-radius: 8px;
+    width: 254px; /* Adjust the width as needed */
+    height: 254px; /* Adjust the height as needed */
+  }
+
+img.list:hover{
+  border: 3px solid #001415;
+}
+
+
+.tags-container {
+    display: flex; /* This will align the tags inline */
+    gap: 10px; /* This adds some space between the tags */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tag {
+    color:white;
+    border: 1px solid #ffffff;
+    border-radius: 20px; /* Rounded corners */
+    padding: 5px 15px; /* Top and bottom, left and right padding */
+    font-size: 0.9em; /* Font size, adjust as needed */
+    cursor: pointer; /* Changes the cursor to indicate these are clickable */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    margin-bottom: 100px;
+}
+
+.tag:hover {
+    background-color:   rgba(255, 68, 0, 0); /* Slightly darker background on hover */
+}
+
+.section-heading h1{
+  margin-top:150px ;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 20px;
+  }
+
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .row {
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Content */
+  .content {
+    background-color: #001415;
+    padding: 10px;
+}
+
+#myImage {
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Optional: Adds a transition effect when the image changes */
+}
+
+#myImage:hover {
+  transform: scale(1.05); /* Optional: Slightly enlarges the image when hovering */
+}
+
+
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  width: calc(100px * 10); /* Assuming each logo is 100px wide and there are 10 logos */
+  animation: scroll 20s linear infinite;
+}
+
+.scrolling-wrapper img {
+  border: 8px solid rgb(255, 255, 255);
+  flex: 0 0 auto;
+  width: 1000px;
+  margin-right: 0px; /* Adjust spacing between logos */
+}
+
+/* Keyframes to animate the logos from right to left */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * 5)); /* Scroll through half the total width */
+  }
+}
+
+.list{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.list.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+  .column {
+    width: 50%; /* Each column takes up 50% width, resulting in 2 columns per row */
+  }
+
+  .row,
+  .row > .column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 8px;
+  justify-content: center;}
+
+}
+
+
+.tag {
+  color:white;
+  border: 1px solid #ffffff;
+  border-radius: 20px; /* Rounded corners */
+  padding: 5px 15px; /* Top and bottom, left and right padding */
+  font-size: 0.9em; /* Font size, adjust as needed */
+  cursor: pointer; /* Changes the cursor to indicate these are clickable */
+  white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+.tag:hover {
+  background-color: rgba(255, 68, 0, 0); /* Slightly darker background on hover */
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 900px) {
+  .column {
+    width: 33.3%; /* Each column takes up 33.33% width, resulting in 3 columns per row */
+  }
+
+  .row,
+  .row > .column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 8px;
+  justify-content: center;}
+
+}
+
+/*.tag{
+  flex: 0 0 auto;
+}*/
+
+@media only screen and (min-width: 1200px) {
+
+ /* .tag{
+    padding: 10px 20px;
+    font-size: 1em;
+  } */
+
+.mobile-container {
+    display: none;
+}
+
+body{
+    background-color:#001415
+}
+
+.skip{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 30px;
+    width: 50px;
+    padding: 10px;
+    margin: 20px;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    font-family: Montserrat;
+    height: 3px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.skip:focus {
+    list-style-type: none;
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    margin: 40px 20px 20px 20px;
+    text-align:center;
+    background: #001415;
+    border-radius: 60px;
+    margin-left: 250px;
+    margin-right: 250px;
+
+
+
+
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.active{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 5px;
+    border: solid 5px orangered;
+    background-color: rgba(220, 220, 220, 0.084);
+    border-radius: 60px;
+
+
+}
+
+.link-1:hover, .link-1:active{
+    color: orangered;
+
+
+}
+
+
+.link-1{
+    width: 78px;
+    display:inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+a.link-1{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: PT Sans;
+
+}
+
+h1{
+    font-family: rubik scribble;
+    font-size: 80px;
+    text-align: center;
+    color: black;
+}
+h2{
+    font-family:rubik scribble ;
+    color: black;
+    font-size: 50px;
+}
+p{
+    font-family: Montserrat;
+    font-size: 30px;
+    color: black;
+}
+.responsive{
+    display: none;
+}
+
+img.whiteversion {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+    height: auto;
+  }
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    padding: 20px;
+
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  
+  .row {
+    margin: 8px -16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width:25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color:white;
+    padding: 10px;
+    /*border: rgb(0, 0, 0) 2px solid;
+    border-radius: 8px;*/
+  }
+  
+  h3{
+    font-family: rubik scribble;
+    color:  #001415;
+    font-size: 30px;
+    text-align: center;
+  }
+  p{
+    font-family: Montserrat;
+    color:#001415;
+    font-size: 15px;
+    text-align: center;}
+
+  img.list {
+    object-fit: cover; /* This will cover the area without stretching the image */
+    border-radius: 8px;
+    width: 254px; /* Adjust the width as needed */
+    height: 254px; /* Adjust the height as needed */
+  }
+
+  img.list:hover{
+    border: 3px solid #ffffff;
+  }
+
+
+  #myImage2 {
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Optional: Adds a transition effect when the image changes */
+  }
+    
+  #myImage2:hover {
+    transform: scale(1.05); /* Optional: Slightly enlarges the image when hovering */
+  }
+    
+
+  .tag {
+    color:rgb(0, 0, 0);
+    border: 1px solid #001415;
+    border-radius: 20px; /* Rounded corners */
+    padding: 5px 15px; /* Top and bottom, left and right padding */
+    font-size: 0.9em; /* Font size, adjust as needed */
+    cursor: pointer; /* Changes the cursor to indicate these are clickable */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    margin-bottom: 50px;
+  }
+  
+  .tag:hover {
+    background-color: #d0d0d0;/* Slightly darker background on hover */
+  }
+  
+
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  width: calc(100px * 10); /* Assuming each logo is 100px wide and there are 10 logos */
+  animation: scroll 20s linear infinite;
+}
+
+.scrolling-wrapper img {
+  border: 8px solid rgb(255, 255, 255);
+  flex: 0 0 auto;
+  width: 1500px;
+  margin-right: 0px; /* Adjust spacing between logos */
+}
+
+/* Keyframes to animate the logos from right to left */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * 5)); /* Scroll through half the total width */
+  }
+}
+
+
+.list{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.list.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+
+
+}
+
