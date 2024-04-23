@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>xuanwu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Rubik+Scribble&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/icon.jpg">
+    <title>Xuanwu</title>
+
+</head>
+
+<body>
+    <a href="#main" class="skip">Skip to main content</a>
+
+    <header>
+
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="xuanwu.html" class="activemobile">Xuanwu</a>
+                <div id="myLinks">
+                    <a href = "sight.html" class = "link-1">Sight</a>
+                    <a href = "sound.html" class= "link-1">Sound</a>
+                    <a href = "smell.html" class= "link-1">Smell</a>
+                    <a href = "taste.html" class= "link-1">Taste</a>
+                    <a href = "touch.html" class= "link-1">Touch</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Open menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+
+        </div>
+        <!--<script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+      -->
+
+        <ul id = "navbar" >
+            <li><a href = "xuanwu.html" class = "link-1">Xuanwu</a></li>
+            <li><a href = "sight.html" class = "link-1">Sight</a></li>
+            <li class = "active"><a href = "sound.html" class= "link-1">Sound</a></li>
+            <li><a href = "smell.html" class= "link-1">Smell</a></li>
+            <li><a href = "taste.html" class= "link-1">Taste</a></li>
+            <li><a href = "touch.html" class= "link-1">Touch</a></li>
+        </ul>
+      </header>
+
+        <main id="main">
+            <div class="bigtitle">
+                <h1>Sound</h1>
+            </div>
+
+            <div>
+              <h2>Selected music</h2>
+            </div>
+
+            <div>
+                <img id="myImage" src="image/ear.jpg" alt="Eye" class="responsive" style="cursor:pointer;"/>
+            </div>
+
+
+        <div class="music-card-container">
+            <div class="music-card">
+              <img src="image/music1.jpg" alt="music1" class="cover-image">
+              <div class="song-details">
+                <h3>Sanctuary</h3>
+                <p>Joji</p>
+                <button onclick="playAudio('mySong1')">Play</button>
+              </div>
+              <audio id="mySong1" src="music/music1.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="music-card">
+              <img src="image/music2.jpg" alt="music2" class="cover-image">
+              <div class="song-details">
+                <h3>TV in B and W</h3>
+                <p>Lana Del Rey</p>
+                <button onclick="playAudio('mySong2')">Play</button>
+              </div>
+              <audio id="mySong2" src="music/music2.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="music-card">
+              <img src="image/music3.png" alt="music3" class="cover-image">
+              <div class="song-details">
+                <h3>For No Reason</h3>
+                <p> Joanna Wang</p>
+                <button onclick="playAudio('mySong3')">Play</button>
+              </div>
+              <audio id="mySong3" src="music/music3.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="music-card">
+              <img src="image/music4.png" alt="music4" class="cover-image">
+              <div class="song-details">
+                <h3>I Like U </h3>
+                <p>NIKI</p>
+                <button onclick="playAudio('mySong4')">Play</button>
+              </div>
+              <audio id="mySong4" src="music/music4.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="music-card">
+              <img src="image/music5.jpg" alt="music5" class="cover-image">
+              <div class="song-details">
+                <h3>Ocho Rios</h3>
+                <p>Daniel Caesar</p>
+                <button onclick="playAudio('mySong5')">Play</button>
+              </div>
+              <audio id="mySong5" src="music/music5.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="music-card">
+              <img src="image/music6.png" alt="music6" class="cover-image">
+              <div class="song-details">
+                <h3>Pine</h3>
+                <p>Unusual Demont</p>
+                <button onclick="playAudio('mySong6')">Play</button>
+              </div>
+              <audio id="mySong6" src="music/music6.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="music-card">
+              <img src="image/music7.png" alt="music7" class="cover-image">
+              <div class="song-details">
+                <h3>Take Time</h3>
+                <p>Samm / Tobe / Joshua</p>
+                <button onclick="playAudio('mySong7')">Play</button>
+              </div>
+              <audio id="mySong7" src="music/music7.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="music-card">
+              <img src="image/music8.png" alt="music8" class="cover-image">
+              <div class="song-details">
+                <h3>Dive</h3>
+                <p>Olivia Dean</p>
+                <button onclick="playAudio('mySong8')">Play</button>
+              </div>
+              <audio id="mySong8" src="music/music8.mp3" preload="auto"></audio>
+            </div>
+          </div>
+
+
+
+
+
+        </main>
+
+
+
+        <!--<script>
+            document.getElementById('myImage').addEventListener('click', function() {
+              if (this.src.includes('image/ear.jpg')) {
+                this.src = 'image/eardark.jpg'; // The new image that will be displayed after click
+              } else {
+                this.src = 'image/ear.jpg'; // This will set it back to the original image if clicked again
+              }
+            });
+            </script>
+            -->
+
+            <script src="js/sound.js"></script>
+
+    </header>
